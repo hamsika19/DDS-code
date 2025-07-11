@@ -15,7 +15,6 @@ int stack[size];
         }
     }
     
-    
 int main(){
     push(3);
     push(2);
@@ -24,7 +23,7 @@ int main(){
     push(1);
     push(11);
 }
-OUTPUT:
+OUTPUT-----------
 3inserted
 2inserted
 8inserted
@@ -55,7 +54,7 @@ int stack[size];
     pop(11);
 } 
 
-OUTPUT:-
+OUTPUT--------
 stack is overflow
 stack is overflow
 stack is overflow
@@ -81,7 +80,8 @@ int stack[size];
     peek(10);
     peek(11);
 } 
-OUTPUT:-
+
+OUTPUT----------
 stack is empty
 stack is empty
 stack is empty
@@ -133,8 +133,7 @@ int top=-1;
         }
     }
     }
-    
-    
+     
    int main(){
        push(8);
        push(80);
@@ -144,9 +143,19 @@ int top=-1;
 
 } 
 
+OUTPUT-------------
 8inserted
 80inserted
 80removed
 11inserted
 11
 8
+
+
+STACK--- Liner data structure 
+LIFO--Last In First Out
+Element placed on the topof each other.
+Can be created using Array on link list.
+PUSH--------------------------
+can insert element in stack at top 
+chech for overflow condition if not overflow insert new elements
