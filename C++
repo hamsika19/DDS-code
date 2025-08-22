@@ -1,4 +1,4 @@
-Create a dynamic array using C++.___________________________________
+Create a dynamic array using C++._________________________________
 #include <iostream>
 using namespace std ;
 int main() {
