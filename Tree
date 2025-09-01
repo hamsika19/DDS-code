@@ -1,0 +1,62 @@
+preorder - root,left,right - 15,10 
+inorder - left,root,right - 10,6
+post order - left,right,root - 6,5, 
+
+
+#include <iostream>
+using namespace std;
+struct Node{
+    int data;
+    Node* left;
+    Node* right;
+Node(int val){
+    data=val;
+    left = nullptr;
+    right = nullptr;
+}    
+};
+ void Inorder(Node*root){
+    if(root){
+        Inorder(root->left);
+        cout<<root->data<<" ";
+        Inorder(root->right);
+    }
+}         
+ void preorder(Node*root){
+     if(root){
+         cout<<root->data<<" ";
+         preorder(root->left);
+         preorder(root->right);
+     }
+ }        
+void postorder(Node*root){
+    if(root){
+    postorder(root->left);
+    postorder(root->right);
+    cout<<root->data<<" ";
+    }
+}         
+    
+int main() {
+    Node*root = new Node(15);
+    root->left = new Node(10);
+     root->right = new Node(9);
+      root->right->left = new Node(6);
+       root->left->right = new Node(5);
+        root->right->left = new Node(3);
+         root->right->right = new Node(2);
+         cout<<"Preorder: ";
+         preorder(root);
+         cout<<endl;
+         cout<<"Inorder: ";
+         Inorder(root);
+         cout<<endl;
+         cout<<"Postorder: ";
+         postorder(root);
+         cout<<endl;
+}  
+
+OUTPUT:
+Preorder: 15 10 5 9 3 2 
+Inorder: 10 5 15 3 9 2 
+Postorder: 5 10 3 2 9 15 
