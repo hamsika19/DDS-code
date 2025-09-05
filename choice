@@ -1,0 +1,77 @@
+CHOICE BASED QUESTION
+
+#include <iostream>
+using namespace std;
+int main() {
+  int a;
+  int b;
+  cout<<"enter a number a: ";
+  cin>>a;
+  cout<<"enter a number b: ";
+    cin>>b;
+    while(true){
+        cout<<"press 1 to add"<<endl;
+        cout<<"press 2 to subtract"<<endl;
+        cout<<"press 3 to multiply"<<endl;
+        cout<<"press 4 to divide"<<endl;
+        cout<<"press 5 to exit"<<endl;
+        int choice;
+        cin>>choice;
+    if(choice==1){
+        cout<<a+b<<endl;
+        }
+    if(choice==2){
+        cout<<a-b<<endl;
+    }
+    if(choice==3){
+        cout<<a*b<<endl;
+    }
+    if(choice==4){
+        cout<<a/b<<endl;
+    }
+   else{
+       break;
+   }
+}
+    }
+
+OUTPUT:-
+enter a number a: 5
+enter a number b: 7
+press 1 to add
+press 2 to subtract
+press 3 to multiply
+press 4 to divide
+press 5 to exit
+1
+12
+press 1 to add
+press 2 to subtract
+press 3 to multiply
+press 4 to divide
+press 5 to exit
+2
+-2
+press 1 to add
+press 2 to subtract
+press 3 to multiply
+press 4 to divide
+press 5 to exit
+3
+35
+press 1 to add
+press 2 to subtract
+press 3 to multiply
+press 4 to divide
+press 5 to exit
+4
+0
+press 1 to add
+press 2 to subtract
+press 3 to multiply
+press 4 to divide
+press 5 to exit
+5
+
+
+=== Code Execution Successful ===
